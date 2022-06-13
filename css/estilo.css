@@ -1,0 +1,904 @@
+                    /********* formatações gerais ***********/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    color: black;
+}
+
+:root {
+    --cinza: rgb(236, 234, 234);
+    --red:rgb(201, 0, 0);
+}
+
+
+body{
+    background-color:rgb(255, 187, 0);
+    height: 100%;
+
+}
+
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+                        /************** estilo cabeçalho **************/
+
+header{
+    width: 75vw;
+    height: 70px;
+    margin: 0 auto;
+    min-width:650px;
+    min-height: 50px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+
+nav ul{
+    width: 30vw;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+
+}
+
+nav div{
+align-self: center;
+}
+
+nav #menu-logo{
+    padding-top: 30px;
+}
+
+                            /******************* Banner *****************/
+#sessaoTopo{
+    background-image: url(../imagens/backgorund2.png);
+    height:75vh;
+    min-height: 440px;
+    background-color:rgb(255, 187, 0);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#banner{
+    width: 75vw;
+    height: 75vh;
+    min-width: 920px;
+    min-height: 420px;
+    margin: 90px auto;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+                        /*************** banner left *********/
+
+#bannerLeft{
+    margin-left: 20px;
+}
+#bannerLeft ul li{
+    list-style:disc;
+}
+
+#bannerLeft h2{
+    width: 150px;
+    font-size: 6em;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+#bannerLeft h3{
+    color:var(--red);
+    text-transform: uppercase;
+    font-size: 1.3em;
+    font-weight: 700;
+}
+
+#bannerLeft .price{
+    font-weight: 900;
+    font-size: 2.4em;
+    margin: -5px  0 0 -2px;
+}
+
+#bannerLeft #bannerLegenda{
+   
+    background-color:var(--red);
+    width: 600px;
+    height: 75px;
+    border-radius: 10px;
+    color: #fff;
+    display: flex;   
+    justify-content: space-between;
+}
+
+#bannerLegenda ul{
+    display:inline-flex;
+    margin-top: 15px;
+    margin-left: 25px;
+}
+
+#bannerLegenda li{
+    padding-right: 30px;
+    color: #fff;
+}
+
+#bannerLegenda p{
+    color: #fff;
+    padding:10px;
+    font-size: 1.4em;
+    font-weight: 600;
+}
+
+#bannerLegenda h4{
+    color: #fff;
+    margin-top: 10px;
+}
+
+#bannerLegenda h1{
+    font-size: 3.2em;
+}
+
+#bannerLegenda i{
+    margin-top: 25px;
+    margin-right: -8px;
+    font-size: 2.2em;
+}
+
+
+
+
+
+                    /******************** Banner right ***************/
+
+#bannerRight{
+    width: 100%;
+    height: 100%;
+}
+
+#bannerRight img{
+    margin: -30% 0 0 -10%;
+    width: 120%;
+    height: 130%;
+}
+
+
+                    /******************* sessao 1 ********************/
+                                            
+ #sessao1{
+    background-color:var(--cinza);
+    background-image:url(../imagens/capa8.png);
+    background-repeat: no-repeat;
+    background-size: 420px 620px;
+    background-position: -220px 40px;
+    width: 100%;
+    height: 120vh;
+    min-height: 620px;
+    max-height: 720px;    
+}
+
+#sobreNos{
+    margin: 0 auto;
+    padding-top: 80px;
+    width: 75vw;
+    height: 100vh;    
+    display: flex;
+}
+
+#sobre-info{
+    padding: 40px 0 0 15%;
+    width: 45%;
+}
+
+#sobre-info h3{
+    color:var(--red);
+    font-size: 1.7em;
+    margin-top: 5px;
+}
+#sobreNos h2 {
+    margin-top: 10px;
+    width: 340px;
+    font-size: 4em;
+    font-weight: 900;
+    letter-spacing: 0.1px;
+}
+#sobreNos p {
+    margin-top: 10px;
+    width: 340px;
+    text-align: justify;
+}
+#sobre-combo{
+    padding-top: 50px;
+    width: 55%;
+    max-width:600px;
+}
+
+#sobre-combo img{
+    width: 55vw;
+    height: 60vh;
+    padding-top:-10%;
+}
+
+#sobreNos button {
+    margin-top: 20px;
+    background-color: rgba(0,0,0,0.3);
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    padding: 10px 30px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#sobreNos button:hover{
+    background-color:var(--red);
+    transition: 1s;
+}
+
+
+
+
+                            /****************** sessao 2 *******************/
+#sessao2{
+    padding-top: 5px;
+    width: 100vw;
+    height: 90vh;
+    background-color:var(--cinza);
+}
+
+#carrouselLayout{
+    text-align: center;
+}
+
+#carrouselLayout h3{
+    color:var(--red);
+    margin-top: 20px;
+    font-size: 1.4em;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+}
+
+#carrouselLayout h2{
+    margin-top: 5px;
+    font-size: 4em;
+    font-weight: 900;
+    
+}
+
+#carrousel{
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    width: 70vw;
+    height: 60vh;
+}
+
+.lanche1, .lanche2, .lanche3, .lanche4{
+    border: dotted 1px rgba(0,0,0,0.3);
+    border-radius: 15px;
+    width: 200px;
+    margin: 5px;
+
+}
+
+                                 /****************** lanche 1 ****************/
+
+
+.lanche1 h3{
+    font-size:1.4em;
+    padding: 15px;
+}
+
+.lanche1 h4{
+    font-size: 2em;
+    padding: 15px;
+    color:var(--red);
+}
+
+.lanche1 h5{
+    font-size: 0.9em;
+    opacity: 0.6;
+    padding: 15px;
+    
+}
+
+.lanche1 button{
+    border: solid 1px rgba(56, 52, 52,0.1);
+    background-color: #fff;
+    box-shadow: 5px 5px 30px 1px #ccc;
+    color:var(--red);
+    margin-top: 10px;
+    padding: 10px 25px;
+    border-radius: 20px;  
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 0.7em;
+    letter-spacing: -1px;  
+    cursor: pointer;
+}
+
+.lanche1 button:hover{
+    background-color:var(--red);
+    color: #fff;
+    transition: 0.5s;
+    box-shadow: 5px 5px 30px 1px #ccc;
+}
+
+.lanche1 img{
+   
+    width: 140px;
+    height: 120px;
+    text-align: center;
+}
+
+                                                /****************** lanche 2 ****************/
+.lanche2 h3{
+    font-size:1.4em;
+    padding: 15px;
+}
+
+.lanche2 h4{
+    font-size: 2em;
+    padding: 15px;
+    color:var(--red);
+}
+
+.lanche2 h5{
+    font-size: 0.9em;
+    opacity: 0.6;
+    padding: 15px;
+    
+}
+
+.lanche2 button{
+    border: solid 1px rgba(56, 52, 52,0.1);
+    background-color: #fff;
+    box-shadow: 5px 5px 30px 1px #ccc;
+    color:var(--red);
+    margin-top: 10px;
+    padding: 10px 25px;
+    border-radius: 20px;  
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 0.7em;
+    letter-spacing: -1px;  
+    cursor: pointer;
+}
+
+.lanche2 button:hover{
+    background-colorvar(--red);
+    color: #fff;
+    transition: 0.5s;
+    box-shadow: 5px 5px 30px 1px #ccc;
+}
+
+.lanche2 img{
+   
+    width: 140px;
+    height: 120px;
+    text-align: center;
+}
+                                                /****************** lanche 3 ****************/
+.lanche3 h3{
+    font-size:1.4em;
+    padding: 15px;
+}
+
+.lanche3 h4{
+    font-size: 2em;
+    padding: 15px;
+    color:var(--red);
+}
+
+.lanche3 h5{
+    font-size: 0.9em;
+    opacity: 0.6;
+    padding: 15px;
+    
+}
+
+.lanche3 button{
+    border: solid 1px rgba(56, 52, 52,0.1);
+    background-color: #fff;
+    box-shadow: 5px 5px 30px 1px #ccc;
+    color:var(--red);
+    margin-top: 10px;
+    padding: 10px 25px;
+    border-radius: 20px;  
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 0.7em;
+    letter-spacing: -1px;  
+    cursor: pointer;
+}
+
+.lanche3 button:hover{
+    background-color:var(--red);
+    color: #fff;
+    transition: 0.5s;
+    box-shadow: 5px 5px 30px 1px #ccc;
+}
+
+.lanche3 img{
+   
+    width: 140px;
+    height: 120px;
+    text-align: center;
+}
+                                                /****************** lanche 4 ****************/
+.lanche4 h3{
+    font-size:1.4em;
+    padding: 15px;
+}
+
+.lanche4 h4{
+    font-size: 2em;
+    padding: 15px;
+    color:var(--red);
+}
+
+.lanche4 h5{
+    font-size: 0.9em;
+    opacity: 0.6;
+    padding: 15px;
+    
+}
+
+.lanche4 button{
+    border: solid 1px rgba(56, 52, 52,0.1);
+    background-color: #fff;
+    box-shadow: 5px 5px 30px 1px #ccc;
+    color:var(--red);
+    margin-top: 10px;
+    padding: 10px 25px;
+    border-radius: 20px;  
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 0.7em;
+    letter-spacing: -1px;  
+    cursor: pointer;
+}
+
+.lanche4 button:hover{
+    background-color:var(--red);
+    color: #fff;
+    transition: 0.5s;
+    box-shadow: 5px 5px 30px 1px #ccc;
+}
+
+.lanche4 img{
+   
+    width: 140px;
+    height: 120px;
+    text-align: center;
+}
+
+                            /*******************  botoes sessao 2 ************/
+
+
+#btnLeft{
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    font-size: 1.4em;
+    color: #fff;
+    background-color: rgba(0,0,0,0.1);
+    border: none;
+    cursor: pointer;
+    align-self: center;
+    margin: 0 10px 0 0;
+}
+i{
+    color: #fff;
+}
+
+#btnLeft:hover{
+    background-color: rgba(0,0,0,0.7);
+    color: #fff;
+    transition: 1s;
+}
+
+#btnRight{
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    font-size: 1.4em;
+    color: #fff;
+    background-color: rgba(0,0,0,0.1);
+    border: none;
+    cursor: pointer;
+    align-self: center;
+    margin: 0 0 0 10px;
+}
+
+#btnRight:hover{
+    background-color: rgba(0,0,0,0.7);
+    color: #fff;
+    transition: 1s;
+}
+
+                                        /******************** sessao 3 *************************/
+
+#sessao3{
+
+    
+    background-image: url(../imagens/backgorundpreto.jpg);
+    background-size: cover;
+    width: 100vw;
+    height: 110vh;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#sessao3 img{
+    margin-top:120px;
+    margin-left: 420px;
+    box-shadow: 10px 10px 10px 30px rgba(0,0,0,0.3);
+    border-radius: 20px;
+}
+
+#sessao3 img:hover{
+    box-shadow: 50px 50px 50px 50px rgba(243, 241, 241, 0.3) ;
+    transition: 1s;
+    opacity: 0.6    ;
+    
+}
+
+                            /************************ sessao 4 *******************/
+
+#sessao4{
+    border: solid 1px transparent;
+    width: 100vw;
+    height: 100%;
+    background-color: var(--cinza)
+
+}
+
+#sessao4Topo{
+    
+    width: 50vw;
+    margin:100px auto;
+    text-align: center;
+}
+
+#sessao4Topo h4{
+    font-size: 1.5em;
+    color: var(--red);
+}
+
+#sessao4Topo h2{
+
+    font-size: 4em;
+    width: 500px;
+    margin: 20px auto;
+    font-weight: 900;
+}
+
+#sessao4MenuTopo {
+    
+    width: 500px;
+    height: 100px; 
+    margin:auto; 
+    margin-bottom: -100px; 
+}
+
+#sessao4MenuTopo img{
+
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#sessao4MenuTopo img:hover{
+    margin-bottom: -10px;
+    transition: 1s ;
+}
+
+#sessao4Cardapio{
+    margin:auto;
+    width: 65%;
+    height: 500px;
+    display: flex;
+    padding-top: 20px;
+    
+}
+
+#cardapioLeft{
+
+    width: 50%;
+}
+
+
+#cardapioRight{
+    width: 50%;
+}
+
+.menuCardapio{
+    
+    padding-left: 30px;
+    width: 430px;
+    height: 120px;
+}
+
+.menuCardapio h6{
+    background-color:var(--red);
+    text-transform: uppercase;
+    font-weight: 500;
+    width: 130px;
+    color: #fff;
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 10px;
+    letter-spacing: 0.6px;
+}
+
+.menuCardapio h4{
+    font-size: 1.3em;
+}
+
+h4 span{
+   font-size: 0.6em ;
+   
+}
+
+.precoCardapio{
+    margin-left: 20px;
+    color:rgb(238, 2, 2);
+    font-size: 1.4em;
+}
+
+.menuCardapio p{
+    width: 380px;
+    font-size: 0.9em;
+    color:rgb(179, 175, 175);
+    text-align: justify;
+}
+
+                                
+#destaque {
+    width: 65vw;
+    height: 60vh;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+ }
+
+
+
+
+#destaqueTop{
+    width:100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+#destaqueTop #destaqueLeft{
+
+    width: 49%;
+    background-image: url(../imagens/banner.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: 450px 250px;
+    background-position-y: -40px;
+    object-fit:fill;
+    border-radius: 10px;    
+
+}
+
+#destaqueTop #destaqueRight{
+
+    width: 49%;
+    background-image: url(../imagens/banner2.jpg);
+    background-size: cover;
+    background-position: 0px -60px;
+    border-radius: 10px;
+}
+#destaqueBottom{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#destaqueBottom div{
+
+    margin-top: 20px;
+    width: 30%;
+    height: 170px;
+    border-radius: 10px;
+}
+
+#destaqueBottomLeft{
+    background-image: url(../imagens/banner3.jpg);
+    background-size: 400px;
+    background-position-x: center;
+    background-position-y: -40px;
+}
+
+#destaqueBottomCenter{
+    background-image: url(../imagens/banner4.jpg);
+    background-size: 400px;
+    background-position-x: center;
+    background-position-y: -40px;
+    
+}
+
+#destaqueBottomRight{
+    background-image: url(../imagens/banner5.jpg);
+    background-size: 340px;
+    background-position-y:-50px;
+    background-position-x: -30px;
+}
+
+                                /************************* delivery ***********************/
+#delivery{
+    background-color: rgb(252, 230, 234);
+    padding:15px 10px 0px 15px;
+    width:100vw;
+    height: 80vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+#deliveryLeft{
+    width: 40vw;
+    margin-right: -200px;
+}
+
+#deliveryLeft h3{
+    color: var(--red);
+    font-size: 1.3em;
+    margin-top: 30px;
+}
+
+#deliveryLeft h2{
+    
+    margin-top: 10px;
+    width: 350px;
+    font-size: 3em;
+    font-weight: 900;
+}
+
+#deliveryLeft p{
+    width: 360px;
+    text-align: justify;
+    opacity: 0.6;
+    letter-spacing: -1px;
+    margin-top: 20px;
+}
+
+#deliveryLeft div{
+    display: flex;
+}
+
+#deliveryLeft img{
+    margin-top: -30px;
+    margin-right: -10px;
+    object-fit: fill;
+}
+
+#deliveryLeft button{
+    text-transform: uppercase;
+    font-size: 0.7em;
+    padding: 10px 20px;
+    background-color:var(--red);
+    color: white;
+    border:none;
+    border-radius: 20px;
+    position: relative;
+    top: 20px;
+    }
+
+
+
+#deliveryRight{
+    
+    width: 25vw;
+    margin-left: -200px;
+
+}
+
+#deliveryRight h3{
+        text-align: right;
+        color: var(--red);
+        font-size: 1.3em;
+        margin-top: 30px;
+}
+
+#deliveryRight h2{
+   
+    margin-top: 10px;
+    margin-left: -11px;
+    width: 350px;
+    font-size: 3em;
+    font-weight: 900;
+    text-align: right;
+}
+
+#deliveryRight p{
+    width: 330px;
+    text-align: right;
+    opacity: 0.6;
+    letter-spacing: -1px;
+    margin-top: 20px;
+}
+
+#deliveryRight button{
+    text-transform: uppercase;
+    font-size: 0.7em;
+    padding: 10px 20px;
+    background-color:var(--red);
+    color: white;
+    border:none;
+    border-radius: 20px;
+    margin-left: 220px;
+    margin-top: 24px;
+    }
+
+    #deliveryRight img{
+        margin-top: -800px;
+        margin-left: 445px;
+        width: 230px;
+        height: 430px;
+    }
+
+                                /******************* rodape ******************/
+#rodape{
+    height: 12vh;
+    width: 99vw;
+    display: flex;
+    justify-content: space-around;    
+}
+
+
+#rodapeLeft{
+    
+    margin-top: 30px;
+    margin-right: 220px;
+    height: 20px;
+    font-size: 1.3em;
+    padding-left: 60px;
+    color: #fff;
+}
+
+#rodapeRight{
+    font-size: 1.6em;
+    margin-top: 10px;
+    color: #fff;
+    padding-right: 50px;
+    align-items: center;
+   
+}
+
+#rodapeRight a{
+    color: #fff;
+    font-size: 2.2em;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+#rodapeRight i{
+    font-size: 0.6em;
+}
+
+#rodapeRight i:hover{
+    color:var(--red);
+    font-size: 1em;
+    transition: 0.8s;
+}
