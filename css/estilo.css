@@ -18,6 +18,7 @@
 body{
     background-color:rgb(255, 187, 0);
     height: 100%;
+    overflow-x: hidden;
 
 }
 
@@ -28,20 +29,18 @@ li{
                         /************** estilo cabeçalho **************/
 
 header{
-    width: 75vw;
+    width: 100vw;
     height: 70px;
-    margin: 0 auto;
     min-width:650px;
     min-height: 50px;
     position:fixed;
     background-color:rgba(0,0,0,0.09);
     border-radius: 0  0 10px 10px;
     top: 0;
-    left: 10vw;
 }
 nav{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
     height: 100%;
 }
@@ -55,7 +54,7 @@ nav ul{
     padding: 12px;
 }
 
-nav ul li a{
+#menu-nav ul li a{
     text-decoration: none;
     color: #fff;
     text-transform: uppercase;
@@ -86,6 +85,89 @@ nav #menu-logo:hover{
     opacity: 1;
 }
 
+            /******************** botao responsivo menu ****************/
+
+#btn-responsive{
+    display: none;
+    border: solid 2px var(--red);
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    position: absolute;
+    left: 15px;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+#btn-responsive1{
+    width: 32px;
+    height: 4px;
+    border: none;
+    background-color: var(--red);
+    position: absolute;
+    top: 8px;
+    left: 2px;    
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.1s;
+}
+
+#btn-responsive2{
+    width: 32px;
+    height: 4px;
+    border: none;
+    background-color: var(--red);
+    position: absolute;
+    top: 16px;
+    left: 2px;    
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.1s;
+}
+#btn-responsive3{
+    width: 32px;
+    height: 4px;
+    border: none;
+    background-color: var(--red);
+    position: absolute;
+    top: 24px;
+    left: 2px;    
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.1s;
+}
+
+                            /********** menu responsivo *******/
+
+#menu-responsivo{
+    display: none;
+    transition: 1s;
+    width: 30vw;
+    height: 680px;
+    background-image: linear-gradient( to bottom, rgba(255, 115, 0, 0.966), rgb(236, 144, 5), rgba(209, 137, 4, 0.986),rgba(235, 219, 2),rgba(209, 137, 4, 0.986),rgba(255, 115, 0, 0.966));
+    position: absolute;
+    top: 0;
+    border-radius: 0 10px 10px 0;
+    box-shadow: 0 10px 70px 30px rgba(0, 0, 0, 0.863);
+    z-index: 0;
+}
+
+#menu-responsivo li{
+    height: 150px;
+    text-align: center;
+}
+#menu-responsivo a{
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: -0.25px;
+    font-size: 1.3em;
+    padding: 10px 40px 10px 40px;
+    text-decoration: none;
+    position: relative;
+    top: 70px;
+    border-radius: 10px;
+    border: solid 2px #fff;
+}
                             /******************* Banner *****************/
 #sessaoTopo{
     margin-top: 180px;
@@ -277,7 +359,6 @@ nav #menu-logo:hover{
 
                             /****************** sessao 2 *******************/
 #sessao2{
-    border:solid 1px red;
     padding-top: 5px;
     width: 100vw;
     height: 90vh;
@@ -286,7 +367,6 @@ nav #menu-logo:hover{
 }
 
 #carrouselLayout{
-    border: solid 1px blue;
     width: 100%;
     height: 100%;
     text-align: center;
@@ -792,7 +872,7 @@ h4 span{
 #delivery{
     background-color: rgb(252, 230, 234);
     padding:15px 10px 0px 15px;
-    width:1420px;
+    width:1280px;
     height: 620px;
     min-height: 540px;
   
@@ -805,7 +885,7 @@ min-width: 720px;
 min-height:580px;
 padding-top: 5%;
 display: flex;
-margin: 0 auto;
+margin-left: 20%;
 text-align: center;
 }
 
@@ -946,3 +1026,20 @@ text-align: center;
     font-size: 1em;
     transition: 0.8s;
 }
+
+            /***************** media queries ***********/
+@media (max-width: 840px){
+    header{
+        background-color: transparent;
+    }
+
+    #menu-itens1,#menu-itens2,#menu-logo{
+        display: none;
+    }
+    #btn-responsive{
+        display: block;
+        position: absolute;
+        top: 35px;
+        left: 10px;
+    }
+ }
