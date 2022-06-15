@@ -392,6 +392,7 @@ ul#bannerLeftTopo3.active{
 }
 
 #carrouselLayout{
+    
     width: 100%;
     height: 100%;
     text-align: center;
@@ -1073,13 +1074,100 @@ text-align: center;
  @media(max-width:425px){
                              /******************* Banner *****************/
 #sessaoTopo{
-    border: solid 1px red;
-    margin-top: 80px;
-    background-image: url(../imagens/backgorund2.png);
     height:75vh;
-    min-height: 440px;
+    min-height: 620px;
     width: 720px;
 }
+
+#bannerLeft h2{
+margin-top: 40px;
+}
+
+#bannerLeft #bannerLegenda{
+   margin-top: 60px;
+}
+
+ /******************** Banner right ***************/
+
+
+#bannerRight img{
+    margin: -80px 0 0 -180px;
+    width: 120%;
+    height: 130%;
+}
+
+ /******************* sessao 1 ********************/
+                                            
+ #sessao1{
+   max-width: 920px;
+   min-width: 920px; 
+}
+
+#sobreNos{
+    margin: 0 0 0 200px;
+    padding-top: 100px;
+    min-height: 670px;
+}
+
+#sobre-info h3{   
+    font-size: 2em;
+    margin-top: -55px;
+}
+
+#sobreNos h2 {
+    min-width: 260px;
+}
+#sobreNos p {
+    padding: 40px 0 0 0 ;
+    width: 250px;
+    min-width: 220px;
+    height: 240px;
+}
+
+#sobreNos button {
+    margin:-10px 0 0 0;
+    padding: 15px 60px 15px 60px;
+}
+
+   /****************** sessao 2 *******************/
+   #sessao2{
+    padding-top: 5px;
+    width: 720px;
+    min-width: 720px;
+    height: 90vh;
+    min-height: 600px;
+    background-color:var(--cinza);
+}
+
+#carrouselLayout{
+    width: 100%;
+    min-width: 700px;
+}
+
+                        /********************* sessao 3 **************/
+
+#sessao3{
+    min-width: 720px;
+}
+
+#sessao3Center{
+    margin: 0 auto;
+    width: 50%;
+    height: 100%;
+    min-width: 520px;
+    text-align: center;
+}
+
+ /************************ sessao 4 *******************/
+
+ #sessao4{
+    border: solid 1px transparent;
+    width: 100vw;
+    height: 100%;
+    min-width: 720px;
+
+}
+
 
  /***************** media queries 376px ***********/
  @media(max-width:376px){
