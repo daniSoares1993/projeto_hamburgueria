@@ -3,7 +3,14 @@ let home = document.getElementById('navHome');
 let menu = document.getElementById('navMenu');
 let delivery = document.getElementById('navDelivery');
 let btn =  document.getElementById('btn-responsive');
-let menuResponsivo = document.getElementById('menu-responsivo');
+let teste = document.getElementById('menuResponsivo')
+
+btn.addEventListener('click',()=>{
+    btn.classList.toggle('active')
+    teste.classList.toggle('active')
+})
+
+
 
 
 // interatividade do menu com a pagina
@@ -21,17 +28,4 @@ menu.addEventListener('click',()=>{
 delivery.addEventListener('click',()=>{
     document.getElementById('deliveryContainer').scrollIntoView({behavior:"smooth"});
     event.preventDefault();
-})
-
-btn.addEventListener('click',()=>{
-    btn.classList.toggle('active')
-
-    if(menuResponsivo.style.display != 'block'){
-        menuResponsivo.style.display = 'block';
-        menuResponsivo.style.zIndex = '0'
-        btn.style.zIndex = '1'
-    }
-    else{
-        alert("erro")
-    }
 })
