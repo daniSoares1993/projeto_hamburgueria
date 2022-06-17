@@ -19,7 +19,9 @@ body#indexHtml.active{
 }
 body{
     background-color:rgb(255, 187, 0);
+    width: 100vw;
     height: 100%;
+    max-width: 1440px;
     overflow-x: hidden;
 
 }
@@ -33,6 +35,7 @@ li{
 header{
     width: 100vw;
     height: 70px;
+    max-width: 1440px;
     min-width:650px;
     min-height: 50px;
     position:fixed;
@@ -906,6 +909,7 @@ h4 span{
 #deliveryContainer{
 width: 100vh;
 height: 80vh;
+max-width: 1040px;
 min-width: 720px;
 min-height:580px;
 padding-top: 5%;
@@ -1051,6 +1055,34 @@ text-align: center;
     font-size: 1em;
     transition: 0.8s;
 }
+
+@media(max-width:1440px){
+    #delivery{
+        width: 100vw;
+        max-width: 1440px;
+    }
+}
+
+                            /****************** media queries 1024 *********************/
+
+@media(max-width:1024px){
+    #delivery{
+        width: 100vw;
+        max-width: 1024px;
+    }
+
+    #deliveryContainer{
+        width: 100vw;
+        margin: 0 auto;
+        max-width: 1000px;
+        min-width: 720px;
+        justify-content:space-around;
+    }
+
+    #deliveryRight img{
+        margin: -390px 0 0 350px;    
+    }
+}
                         /**************** media queries 840px ************************/
 @media (max-width: 840px){
     header{
@@ -1067,10 +1099,121 @@ text-align: center;
         left: 10px;
     }
  }
+                    /******************* media queries 768px *****************/
+
+
+ @media(max-width:768px){
+    #sessaoTopo{
+        width: 100%;
+        max-width: 768px;
+    }
+
+    #bannerRight img{
+        margin:-140px 0 0 -80px;
+    }
+
+    #sobreNos{
+        margin: 0 auto;
+        padding-top: 80px;
+        width: 100%;
+        max-width: 720px;
+        min-width: 680px;
+    }
+
+    #sobre-info{
+        margin: 0 auto;
+        width: 45%;
+    }
+    
+
+    #sobre-combo{
+        width: 35%;
+        max-width:600px;
+    }
+    
+    #sobre-combo img{
+        width: 100%;
+        height: 60vh;
+    }
+
+    #sessao4Topo{
+        width: 100vw;
+    }
+
+    #sessao4Cardapio{
+        margin:auto;
+        width: 90%;
+        height: 100%;
+        min-height: 540px;
+        min-width: 720px;
+        display: flex;
+        padding: 0;
+    }
+
+    .menuCardapio h4{
+        font-size: 1.2em;
+        margin-top: 3px;
+    }
+
+    .menuCardapio p{
+        width: 95%;
+        margin:0 auto;
+    }
+
+    .menuCardapio{
+        width: 100%;
+        padding:0 0 0 5px;
+        margin: 10px 0px 10px 0px;
+    }
+
+    #deliveryContainer{
+        max-width: 720px;
+    }
+
+    #deliveryLeft h2{
+        font-size: 2.3em;
+    }
+
+    #deliveryLeft p{
+        width: 60%;
+        font-size: 1.2em;
+        margin: 0 auto;
+    }
+
+    #deliveryRight h2{
+        margin: 0 auto;
+        font-size: 2.3em;
+        width: 65%;
+    }
+
+    #deliveryRight p{
+        width: 60%;
+        font-size: 1.2em;
+        margin: 0 auto;
+    }
+
+    #deliveryRight button{
+        margin-top: 10px;
+    }
+
+    #deliveryRight img{
+        margin: -400px 0 0 300px;
+    }
+
+    #footer{
+        width: 100%;
+        height: 100%;
+        max-height: 80px;
+    }
+
+    #rodapeLeft{
+        margin: 30px 0 0 -100px;
+    }
+ }
 
                            
 
- /***************** media queries 425px ***********/
+                            /***************** media queries 425px ***********/
  @media(max-width:425px){
                              /******************* Banner *****************/
 #sessaoTopo{
